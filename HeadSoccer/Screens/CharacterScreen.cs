@@ -177,6 +177,11 @@ namespace HeadSoccer.Screens
             readyCheck();
         }
 
+        private void CharacterScreen_Load(object sender, EventArgs e)
+        {
+
+        }
+
         public void readyCheck()
         {
             if (p1Ready == true && p2Ready == true)

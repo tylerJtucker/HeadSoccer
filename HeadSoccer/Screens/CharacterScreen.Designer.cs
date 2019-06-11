@@ -62,19 +62,23 @@
             // InstructLabel
             // 
             this.InstructLabel.AutoSize = true;
-            this.InstructLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InstructLabel.BackColor = System.Drawing.Color.Transparent;
+            this.InstructLabel.Font = new System.Drawing.Font("Impact", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InstructLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.InstructLabel.Location = new System.Drawing.Point(414, 588);
             this.InstructLabel.Name = "InstructLabel";
-            this.InstructLabel.Size = new System.Drawing.Size(299, 24);
+            this.InstructLabel.Size = new System.Drawing.Size(280, 23);
             this.InstructLabel.TabIndex = 2;
             this.InstructLabel.Text = "Press the green button to ready up";
             // 
             // p1ReadyLabel
             // 
             this.p1ReadyLabel.AutoSize = true;
+            this.p1ReadyLabel.BackColor = System.Drawing.Color.Transparent;
+            this.p1ReadyLabel.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p1ReadyLabel.Location = new System.Drawing.Point(299, 493);
             this.p1ReadyLabel.Name = "p1ReadyLabel";
-            this.p1ReadyLabel.Size = new System.Drawing.Size(47, 13);
+            this.p1ReadyLabel.Size = new System.Drawing.Size(48, 19);
             this.p1ReadyLabel.TabIndex = 3;
             this.p1ReadyLabel.Text = "READY!";
             this.p1ReadyLabel.Visible = false;
@@ -82,9 +86,11 @@
             // p2ReadyLabel
             // 
             this.p2ReadyLabel.AutoSize = true;
+            this.p2ReadyLabel.BackColor = System.Drawing.Color.Transparent;
+            this.p2ReadyLabel.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.p2ReadyLabel.Location = new System.Drawing.Point(762, 493);
             this.p2ReadyLabel.Name = "p2ReadyLabel";
-            this.p2ReadyLabel.Size = new System.Drawing.Size(47, 13);
+            this.p2ReadyLabel.Size = new System.Drawing.Size(48, 19);
             this.p2ReadyLabel.TabIndex = 4;
             this.p2ReadyLabel.Text = "READY!";
             this.p2ReadyLabel.Visible = false;
@@ -94,6 +100,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
+            this.BackgroundImage = global::HeadSoccer.Properties.Resources.Stadium;
             this.Controls.Add(this.p2ReadyLabel);
             this.Controls.Add(this.p1ReadyLabel);
             this.Controls.Add(this.InstructLabel);
@@ -101,6 +108,7 @@
             this.Controls.Add(this.Char1);
             this.Name = "CharacterScreen";
             this.Size = new System.Drawing.Size(1106, 720);
+            this.Load += new System.EventHandler(this.CharacterScreen_Load);
             this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.CharacterScreen_PreviewKeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.Char1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Char2)).EndInit();
