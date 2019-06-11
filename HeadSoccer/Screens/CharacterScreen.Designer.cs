@@ -108,6 +108,7 @@
             this.Controls.Add(this.Char1);
             this.Name = "CharacterScreen";
             this.Size = new System.Drawing.Size(1106, 720);
+            this.Load += new System.EventHandler(this.CharacterScreen_Load);
             this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.CharacterScreen_PreviewKeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.Char1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Char2)).EndInit();
